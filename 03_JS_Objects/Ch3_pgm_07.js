@@ -5,14 +5,17 @@ var book2;
 
 book1 = {
     title : "The Hobbit",
-    author : "J. R. R. Tolkien"
+    author : "J. R. R. Tolkien",
+    printyear:"2000"
 };
 
 book2 = {
 	title : "Northern Lights",
-	author : "Philip Pullman"
+	author : "Philip Pullman",
+    printyear:"1999"
 };
-
+console.log(book1);
+console.log(book2);
 
 
 /* Further Adventures
