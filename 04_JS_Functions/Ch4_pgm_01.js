@@ -14,6 +14,18 @@ console.log("Actors: " + movie1.actors);
 console.log("Directors: " + movie1.directors);
 console.log("------------------------------");
 
+movie2 = {
+  title: "kgf",
+  actors: "yash",
+  directors: "Prashanth Neel"
+};
+
+console.log("Movie information for " + movie2.title);
+console.log("------------------------------");
+console.log("Actors: " + movie2.actors);
+console.log("Directors: " + movie2.directors);
+console.log("------------------------------");
+
 
 
 /* Further Adventures
