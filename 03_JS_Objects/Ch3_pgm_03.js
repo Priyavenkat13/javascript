@@ -3,12 +3,19 @@
 var book;
 
 book = {
+    title : "Run by Run",
+    author : "J. R. R. Tolkien",
+    published : 1937
+};
+var book;
+console.log(book);
+
+book2= {
     title : "The Hobbit",
     author : "J. R. R. Tolkien",
     published : 1937
 };
-
-console.log(book);
+console.log(book2);
 
 
 
