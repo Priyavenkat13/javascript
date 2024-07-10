@@ -1,12 +1,19 @@
 // A function with three arguments
 
+
 var totalCost;
 
-totalCost = function (callOutCharge, costPerHour, numberOfHours) {
-	return callOutCharge + costPerHour * numberOfHours;
+totalCost = function (callOutCharge, costPerHour, numberOfHours, discount) {
+    var total = callOutCharge + costPerHour * numberOfHours;
+    if (discount) {
+        total -= discount;
+    }
+    return total;
 };
 
-console.log("$" + totalCost(30, 40, 3));
+// Example: Total cost with a $20 discount coupon
+console.log("$" + totalCost(30, 40, 3, 20)); // Output: $130
+
 
 
 
