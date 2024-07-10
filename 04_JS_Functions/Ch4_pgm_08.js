@@ -6,11 +6,25 @@ displayMenu = function () {
 	console.log("Please choose an option:");
 	console.log("(1) Print log");
 	console.log("(2) Upload file");
+	console.log("(3) Download file");
+	console.log("(4) Setting");
 	console.log("(9) Quit");
 };
 
 displayMenu();
 
+var Menu;
+
+Menu = function () {
+	console.log("Please choose an option:");
+	console.log("(1) Print log");
+	console.log("(2) Upload file");
+	console.log("(3) Download file");
+	console.log("(4) Setting");
+	console.log("(9) Quit");
+};
+
+Menu();
 
 
 /* Further Adventures
