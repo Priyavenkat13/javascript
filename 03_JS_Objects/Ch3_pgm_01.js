@@ -7,9 +7,13 @@ bookTitle = "The Hobbit";
 bookAuthor = "J. R. R. Tolkien";
 
 console.log(bookTitle + " by " + bookAuthor);
+var secondbookTitle = "1984";
+var secondbookAuthour = "George orwell";
+console.log(secondbookTitle + " by " + secondbookAuthour);
 
-
-
+var thirdbookTitle = "To Kill a Mockingbird";
+var thirdbookAuthor = "Harper Lee";
+console.log(thirdbookTitle + "by" + thirdbookAuthor);
 /* Further Adventures
  *
  * 1) Declare variables for a second book
