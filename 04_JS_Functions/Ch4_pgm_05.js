@@ -2,7 +2,10 @@
 
 var findTotal;
 var displayMenu;
+var number1,number2,result;
 
+number1=10;
+number2=20;
 findTotal = function () {
 	result = number1 + number2;
 };
@@ -13,7 +16,9 @@ displayMenu = function () {
 	console.log("(2) Upload file");
 	console.log("(9) Quit");
 };
-
+findTotal();
+console.log("the total is:"  + result);
+displayMenu();
 
 
 /* Further Adventures
