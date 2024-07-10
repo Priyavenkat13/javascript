@@ -24,6 +24,18 @@ movie3 = {
     directors: "J.J.Abrams"
 };
 
+question1 = {
+    question: "What is the capital of France?",
+    options: ["1) Paris", "2) London", "3) Berlin", "4) Madrid"],
+    answer: "1"
+};
+
+question2 = {
+    question: "Which planet is known as the Red Planet?",
+    options: ["1) Earth", "2) Mars", "3) Jupiter", "4) Venus"],
+    answer: "2"
+};
+
 showMovieInfo = function () {
     console.log("Movie information for " + movie.title);
     console.log("------------------------------");
@@ -31,6 +43,22 @@ showMovieInfo = function () {
     console.log("Directors: " + movie.directors);
     console.log("------------------------------");
 };
+
+showQuestionInfo = function () {
+    console.log("Question: " + question.question);
+    console.log("------------------------------");
+    console.log("Options:");
+    question.options.forEach(function(option) {
+        console.log(option);
+    });
+    console.log("------------------------------");
+};
+
+question = question1;
+showQuestionInfo();
+
+question = question2;
+showQuestionInfo();
 
 movie = movie1;
 showMovieInfo();
