@@ -1,20 +1,34 @@
 // Using the square function
 
-var square;
 
-square = function (numberToSquare) {
+
+ var square = function (numberToSquare) {
   var result;
   result = numberToSquare * numberToSquare;
   console.log(numberToSquare + " * " + numberToSquare + " = " + result);
 };
+var cube = function (numberToCube) {
+  var result = numberToCube * numberToCube * numberToCube;
+  console.log(numberToCube + " cubed = " + result);
+};
+cube(3);
+cube(-1);
+cube(0);
+cube(10);
 
 square(10);
 square(-2);
 square(1111);
 square(0.5);
-
-
-
+square(100);
+var squareRoot = function (numberToRoot) {
+  var result = Math.sqrt(numberToRoot);
+  console.log("The square root of " + numberToRoot + " is " + result);
+};
+squareRoot(16);
+squareRoot(6);
+squareRoot(2);
+squareRoot(11);s
 /* Further Adventures
  *
  * 1) Define a cube function that cubes
