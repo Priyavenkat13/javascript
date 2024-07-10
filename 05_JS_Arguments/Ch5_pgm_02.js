@@ -6,13 +6,16 @@ var showMessage;
 msg = "It's full of stars!";
 
 showMessage = function () {
-	console.log(message);
+	console.log(msg);
 };
 
 showMessage();
 
-
-
+var message1 = "universe ";
+console.log(msg);
+console.log(message1);
+var combinedMsg = msg + " " + message1;
+console.log(combinedMsg);
 /* Further Adventures
  *
  * 1) Update the console.log so the program works.
