@@ -3,14 +3,12 @@
 var message;
 var showMessage;
 
-message = "It's full of stars!";
+message = "hi!";
 
 showMessage = function () {
 	console.log(message);
 };
-
 showMessage();
-
 
 
 /* Further Adventures
