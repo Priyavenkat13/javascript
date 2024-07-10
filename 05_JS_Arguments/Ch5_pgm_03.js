@@ -7,8 +7,12 @@ showMessage = function (message) {
 };
 
 showMessage("It's full of stars!");
-
-
+showMessage("Hello,");
+showMessage("World!");
+showMessage = function (message) {
+    console.log("The message received is: " + message + ". Thank you !");
+};
+showMessage("Welcome!");
 
 /* Further Adventures
  *
