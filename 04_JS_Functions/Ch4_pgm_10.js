@@ -19,6 +19,12 @@ showMovieInfo = function () {
 };
 
 movie = movie1;
+movie=movie2;
+var movie2={};
+movie=movie2;
+movie2.title = "Bhramam";
+movie2.actors = "prithviraj","raashii khanna";
+movie2.directors = "Ravi chandran";
 
 showMovieInfo();
 
