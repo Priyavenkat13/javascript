@@ -2,6 +2,10 @@
 
 var score;
 score = 100;
+console.log(score);
+var score1;
+score1=200;
+console.log(score1);
 
 /* Further Adventures
  *
