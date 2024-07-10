@@ -7,10 +7,19 @@ book = {
 	author    : "J. R. R. Tolkien",
 	published : 1937
 };
-
 console.log(book.title);
 console.log(book.author);
+console.log(book.published);
 
+var book1;
+book1 = {
+	title     : "The Hobbit",
+	  author    : "J. R. R. Tolkien",
+	  published : 1999
+  };
+console.log(book1.title);
+console.log(book1.author);
+console.log(book1.published);
 
 
 /* Further Adventures
