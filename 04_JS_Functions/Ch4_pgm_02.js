@@ -21,6 +21,19 @@ movie3 = {
   actors: "Harrison Ford, Mark Hamill, Carrie Fisher",
   directors: "J.J.Abrams"
 };
+movie4= {
+  title: "Star Wars: Episode VII - The Force Awakens",
+  actors: "Harrison Ford, Mark Hamill, Carrie Fisher",
+  directors: "J.J.Abrams"
+};
+events= {
+  title:"Run baby Run",
+  actors:"R.J.Balaji"
+}
+console.log("Movie information for " + events.title);
+console.log("------------------------------");
+console.log("Actors: " + events.actors);
+
 
 console.log("Movie information for " + movie1.title);
 console.log("------------------------------");
@@ -40,6 +53,11 @@ console.log("Actors: " + movie3.actors);
 console.log("Directors: " + movie3.directors);
 console.log("------------------------------");
 
+console.log("Movie information for " + movie4.title);
+console.log("------------------------------");
+console.log("Actors: " + movie4.actors);
+console.log("Directors: " + movie4.directors);
+console.log("------------------------------");
 
 
 /* Further Adventures
