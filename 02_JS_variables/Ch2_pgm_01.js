@@ -1,8 +1,10 @@
 // Declaring a variable
 
 var score;
-var a=10;
-console.log("aaa");
+ a=10;
+b=20;
+console.log(a);
+console.log(b);
 
 /* Further Adventures
  *
