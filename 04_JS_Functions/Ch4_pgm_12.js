@@ -3,13 +3,16 @@
 var sale1;
 var sale2;
 var sale3;
+var sale4;
 var sale;
 var calculateTax;
 var displaySale;
+var display;
 
 sale1 = { price: 140, taxRate: 15 };
 sale2 = { price: 40, taxRate: 10 };
 sale3 = { price: 120, taxRate: 20 };
+sale3 = { price: 400, taxRate: 20 };
 
 calculateTax = function () {
 	sale.tax = sale.price * sale.taxRate / 100;
@@ -20,6 +23,11 @@ displaySale = function () {
   console.log("price = $" + sale.price);
   console.log("tax @ " + sale.taxRate + "% = $" + sale.tax);
   console.log("total cost = $" + sale.total);
+};
+display = function (saleObject) {
+  sale = saleObject;
+  calculateTax();
+  displaySale();
 };
 
 sale = sale1;
