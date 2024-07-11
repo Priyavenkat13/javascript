@@ -5,9 +5,15 @@ var secret = 8;
 var guess = function (userNumber) {
   if (userNumber === secret) {
     console.log("Well done!");
+  } else if (userNumber > secret) {
+    console.log("GOOD!");
+  } else {
+    console.log("Excellent!");
   }
 };
-
+guess(2); 
+guess(8);  
+guess(10);
 
 
 /* Further Adventures
