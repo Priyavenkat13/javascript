@@ -1,14 +1,17 @@
 // Getting a string for a player’s name
 
 var getPlayerName;
-
 getPlayerName = function (playerName) {
-    return playerName;
+     var prefixSuffix = "====";
+     var formattedName = prefixSuffix + " " + playerName + " " + prefixSuffix;
+     var borderedName = "\n|\n| " + playerName + "\n|";
+     return borderedName;
 };
 
 console.log(getPlayerName("Kandra"));
-
-
+console.log(getPlayerName("arul"));
+console.log(getPlayerName("Mahesha"));
+console.log(getPlayerName("Jahver"));
 
 /* Further Adventures
  *
