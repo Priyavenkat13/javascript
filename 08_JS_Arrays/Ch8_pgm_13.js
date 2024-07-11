@@ -94,15 +94,37 @@ var spacer = {
     health: 50,
     items : ["a trusty lamp"]
   };
+  var getPlayerItemsNumbered = function (player) {
+    var itemsString = "Items:" + spacer.newLine();
+
+    player.items.forEach(function (item, index) {
+        itemsString += "   " + (index + 1) + ". " + item + spacer.newLine();
+    });
+
+    return itemsString;
+};
+var getPlayerItemsNumbered = function (player) {
+  var itemsString = "Items:" + spacer.newLine();
+
+  player.items.forEach(function (item, index) {
+      itemsString += "   " + (index + 1) + ". " + item + spacer.newLine();
+  });
+
+  return itemsString;
+};
+var addItem = function (player, newItem) {
+  player.items.push(newItem);
+};
+
   
-  showPlayerInfo(player1, "=");
   
   player1.items.push("a rusty key");
-  
+  player1.items.push("a shiny sword");
+  player1.items.pop(); 
+  addItem(player1, "a magical potion");
   showPlayerInfo(player1, "*");
-  
-  
-  
+  showPlayerInfo(player1, "="); 
+ 
   
   /* Further Adventures
    *
