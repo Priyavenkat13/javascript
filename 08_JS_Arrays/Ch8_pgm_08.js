@@ -1,15 +1,16 @@
 // Calling forEach with an inline function
 
 var items = [ "The Pyramids", "The Grand Canyon", "Bondi Beach" ];
-
+var showItems = function () {
+console.log("Number of places to visit: " + items.length);
 console.log("Dream destinations:");
 
 items.forEach(function (item) {
 	console.log(" – " + item);
 });
 
-
-
+};
+showItems();
 /* Further Adventures
  *
  * 1) Change the program to show the number of
