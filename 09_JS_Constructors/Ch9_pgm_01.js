@@ -15,10 +15,18 @@ var planet1 = buildPlanet(
     5,
     "Gas Giant"
 );
+var planet2 = buildPlanet(
+    "Sun",
+    1,
+    "Gas Giant"
+);
 
 console.log(planet1.name);
 console.log(planet1.position);
 console.log(planet1.type);
+console.log(planet2.name);
+console.log(planet2.position);
+console.log(planet2.type);
 
 
 
