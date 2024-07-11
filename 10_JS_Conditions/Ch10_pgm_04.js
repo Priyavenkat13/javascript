@@ -2,6 +2,7 @@
 
 var getGuesser = function () {
   var secret = Math.floor(Math.random() * (50 - 30 + 1)) + 30; 
+ 
 
   return function (userNumber) {
       if (userNumber === secret) {
@@ -13,7 +14,7 @@ var getGuesser = function () {
 };
 
 var guess = getGuesser();
-  
+ console.log(guess()); 
   
   
   /* Further Adventures
