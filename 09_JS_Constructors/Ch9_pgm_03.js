@@ -20,13 +20,24 @@ var buildPlanet = function (name, position, type) {
 var planets = [
     buildPlanet( "Jupiter", 5, "Gas Giant" ),
     buildPlanet( "Neptune", 8, "Ice Giant" ),
-    buildPlanet( "Mercury", 1, "Terrestrial" )
+    buildPlanet( "Mercury", 1, "Terrestrial" ),
+    buildPlanet( "Saturn", 6, "Gas Giant"),
+    buildPlanet( "Earth", 3, "Terrestrial" )
+
 ];
 
 planets.forEach(function (planet) {
     planet.showPlanet();
 });
-
+var displayPlanets = function (planets) {
+    planets.forEach(function (planet, index) {
+        planet.showPlanet();
+        if (index < planets.length - 1) {
+            console.log("--------"); 
+        }
+    });
+};
+displayPlanets(planets);
 
 
 /* Further Adventures
