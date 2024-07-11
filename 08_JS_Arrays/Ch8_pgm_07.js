@@ -2,6 +2,14 @@
 
 var items;
 var showInfo;
+var getLetter=function(){
+  var Letter=0;
+  items.forEach(function(item){
+    Letter=item.length;
+  });
+  return Letter;
+}
+
 
 items = [
   "The Pyramids",
@@ -14,9 +22,11 @@ showInfo = function (itemToShow) {
 };
 
 items.forEach(showInfo);
+items.push("Machu Picchu");
+items.push("The Great Wall of China");
 
-
-
+console.log("\nAfter adding extra items:");
+items.forEach(showInfo);
 /* Further Adventures
  *
  * 1) Add a few extra items to the array, some
