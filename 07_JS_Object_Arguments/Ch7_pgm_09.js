@@ -5,9 +5,15 @@ var message = "We choose to go to the Moon!";
 var charIndex = message.indexOf("M");
 
 console.log(message.substr(charIndex, 3));
+var goIndex = message.indexOf("go");
+console.log("Index of 'go':", goIndex);
 
+var chooseIndex = message.indexOf("choose");
+var chooseWord = message.substr(chooseIndex, 6);
+console.log("Word 'choose':", chooseWord);
 
-
+var ooIndex = message.lastIndexOf("oo");
+console.log("Last index of 'oo':", ooIndex);
 /* Further Adventures
  *
  * 1) Use indexOf to find the index of where the
