@@ -4,7 +4,14 @@ var planet = "Jupiter";
 var bigPlanet = planet.toUpperCase();
 
 console.log(planet + " becomes " + bigPlanet);
-
+function  getBig(str){
+    return str.toUpperCase();
+}
+console.log(getBig("earth")); 
+function  getsmall(str){
+    return str.toLowerCase();
+}
+console.log(getsmall("EARTH"));
 
 
 /* Further Adventures
