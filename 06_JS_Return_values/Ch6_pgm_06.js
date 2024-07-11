@@ -21,6 +21,8 @@ totalCost = function (callOutCharge, costPerHour, numberOfHours) {
     return callOutCharge + costPerHour * numberOfHours;
 };
 
+console.log(getHelloTo("Dax"));
+console.log(getMessage());
 
 
 /* Further Adventures
