@@ -1,31 +1,55 @@
 // Passing an array to a function
 
-var getVisitorReport = function (visitorArray, dayInWeek) {
-	var days = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday"
+var getVisitorReport = function(visitorArray, dayInWeek) {
+  var days = [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
   ];
-	var index = dayInWeek - 1;
-	var visitorReport;
+  var index = dayInWeek - 1;
+  var visitorReport;
 
-	visitorReport = "There were ";
+  visitorReport = "There were ";
   visitorReport += visitorArray[index];
   visitorReport += " visitors ";
-	visitorReport += "on " + days[index];
+  visitorReport += "on " + days[index];
 
-	return visitorReport;
+  return visitorReport;
 };
 
-var visitors = [ 354, 132, 210, 221, 481 ];
+var visitors = [354, 132, 210, 221, 481, 300, 275];
 
-var report = getVisitorReport(visitors, 2);
-
+var report = getVisitorReport(visitors, 5); 
 console.log(report);
 
 
+report = getVisitorReport(visitors, 6);
+console.log(report);
+
+
+var getMonthlyVisitorReport = function(monthArray, week, dayInWeek) {
+  var weekVisitors = monthArray[week - 1];
+  return getVisitorReport(weekVisitors, dayInWeek);
+};
+
+
+var week1 = [354, 132, 210, 221, 481, 300, 275];
+var week2 = [345, 124, 205, 231, 470, 310, 260];
+var week3 = [360, 138, 215, 240, 490, 320, 280];
+var week4 = [370, 145, 220, 250, 500, 330, 290];
+
+
+var month = [week1, week2, week3, week4];
+
+
+
+console.log(getMonthlyVisitorReport(month, 2, 6));
+console.log(getMonthlyVisitorReport(month, 3, 7));
+console.log(getMonthlyVisitorReport(month, 4, 1)); 
 
 /* Further Adventures
  *
