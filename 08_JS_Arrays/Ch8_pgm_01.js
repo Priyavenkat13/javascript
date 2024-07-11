@@ -2,13 +2,16 @@
 
 var scores;
 var names;
+var akascores;
 
 scores = [ 3, 1, 8, 2 ];
 names = [ "Kandra", "Dax", "Blinky" ];
+scores.push(4);
+names.push("Marry");
 
 console.log(scores);
 console.log(names);
-
+console.log(akascores);
 
 
 /* Further Adventures
