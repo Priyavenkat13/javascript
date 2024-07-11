@@ -3,13 +3,15 @@
 var secret = 8;
 
 var guess = function (userNumber) {
-  if (userNumber === secret) {
-    console.log("Well done!");
+  if (userNumber !== secret) {
+    console.log("Well");
   } else {
-    console.log("Unlucky, try again.");
+    console.log("try again.");
   }
 };
-
+guess(6);
+guess(2);
+guess(10);
 
 
 /* Further Adventures
