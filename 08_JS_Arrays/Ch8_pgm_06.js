@@ -7,9 +7,15 @@ var removed;
 items.push(item);
 items.push("The Grand Canyon");
 items.push("Bondi Beach");
+items.push("Marina Beach");
+items[1] = " Taj Mahal";
+items.push("Machu Picchu", "Christ the Redeemer");
+console.log(items.join(" and "));
+
+console.log(items.join(" and "));
 
 console.log(items);
-
+console.log(items.join(" and "));
 removed = items.pop();
 
 console.log(removed + " was removed");
