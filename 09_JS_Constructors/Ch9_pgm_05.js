@@ -16,17 +16,39 @@ var Planet = function (name, position, type) {
     this.addMoon = function (moon) {
         this.moons.push(moon);
     };
+  
+    
+    this.removeMoon = function () {
+        if (this.moons.length > 0) {
+            this.moons.pop();
+        } else {
+            console.log("No moons to remove.");
+        }
+    };
 };
 
-var planet = new Planet( "Jupiter", 5, "Gas Giant" );
 
-planet.addMoon("Io");
-planet.addMoon("Europa");
+var planet1 = new Planet("Jupiter", 5, "Gas Giant");
 
-planet.showPlanet();
+planet1.addMoon("Io");
+planet1.addMoon("Europa");
+
+planet1.showPlanet();
 
 
+var planet2 = new Planet("Narnia", 7, "Ice Giant");
 
+
+planet2.addMoon("Moon1");
+planet2.addMoon("Moon2");
+planet2.addMoon("Moon3");
+
+
+planet2.showPlanet();
+planet2.removeMoon();
+planet2.showPlanet();
+
+    
 /* Further Adventures
  *
  * 1) Create a second planet.
