@@ -3,10 +3,10 @@
 var message;
 var showMessage;
 
-message = "hi!";
+msg = "hi!";
 
 showMessage = function () {
-	console.log(message);
+	console.log(msg);
 };
 showMessage();
 
