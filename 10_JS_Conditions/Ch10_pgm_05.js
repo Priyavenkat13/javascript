@@ -7,17 +7,17 @@ var getGuesser = function () {
       if (userNumber === secret) {
         return "Well done!";
       } else {
-        if (userNumber > secret) {
-          return "Too high!";
-        } else {
+        if (userNumber < secret) {
           return "Too low!";
+        } else {
+          return "Too  high!";
         }
       }
     };
   };
   
   var guess = getGuesser();
-  
+  console.log(guess());
   
   
   /* Further Adventures
