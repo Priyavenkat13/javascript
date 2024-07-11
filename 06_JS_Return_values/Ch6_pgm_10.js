@@ -11,6 +11,9 @@ var getPlayerHealth = function (playerName, playerHealth) {
 var getPlayerPlace = function (playerName, playerPlace) {
     return playerName + " is in " + playerPlace;
 };
+var getPlayerItems = function (playerName, playerItems) {
+    return playerName + " has the following items: " + playerItems;
+};
 
 var getBorder = function () {
     return "================================";
@@ -41,9 +44,8 @@ var player2 = {
     health: 40
 };
 
-console.log(getPlayerInfo(player1.name, player1.place, player1.health));
-console.log(getPlayerInfo(player2.name, player2.place, player2.health));
-
+console.log(getPlayerInfo(player1.name, player1.place, player1.health,player1.item));
+console.log(getPlayerInfo(player2.name, player2.place, player2.health,player2.item));
 
 
 /* Further Adventures
