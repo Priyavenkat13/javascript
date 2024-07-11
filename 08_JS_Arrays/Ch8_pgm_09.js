@@ -4,13 +4,13 @@ var players;
 var showArguments;
 
 players = [ "Dax", "Jahver", "Kandra" ];
-
+players.push("kamal","hari");
 showArguments = function (item, index, wholeArray) {
-  console.log("Item: " + item);
+  console.log("Item: " +wholeArray[index]);
   console.log("Index: " + index);
   console.log("Array: " + wholeArray);
 };
-
+console.log("\nAfter adding two more names:");
 players.forEach(showArguments);
 
 
