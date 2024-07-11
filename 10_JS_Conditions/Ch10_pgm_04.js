@@ -1,18 +1,18 @@
 // Guess the random number
 
 var getGuesser = function () {
-    var secret = Math.floor(Math.random() * 10 + 1);
-  
-    return function (userNumber) {
+  var secret = Math.floor(Math.random() * (50 - 30 + 1)) + 30; 
+
+  return function (userNumber) {
       if (userNumber === secret) {
-        return "Well done!";
+          return "Well done!";
       } else {
-        return "Unlucky, try again.";
+          return "Unlucky, try again.";
       }
-    };
   };
-  
-  var guess = getGuesser();
+};
+
+var guess = getGuesser();
   
   
   
