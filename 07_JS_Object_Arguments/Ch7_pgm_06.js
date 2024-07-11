@@ -1,18 +1,50 @@
 // Using Math.min and Math.max to constrain an argument
 
-var line = function (lineLength) {
-    var line = "========================================";
-    lineLength = Math.max(0, lineLength);
-    lineLength = Math.min(40, lineLength);
-    return line.substr(0, lineLength);
-  };
-  
-  console.log(line(30));
-  console.log(line(40));
-  console.log(line(50));
-  
-  
-  
+var line = function(lineLength) {
+  var line = "========================================";
+  lineLength = Math.max(0, lineLength);
+  lineLength = Math.min(40, lineLength);
+  return line.substr(0, lineLength);
+};
+
+console.log(line(30));
+console.log(line(40));
+
+
+
+for (var i = -20; i <= 60; i += 10) {
+  console.log(`line(${i}): "${line(i)}"`);
+}
+
+
+var spaces = function(spaceLength) {
+  var spaces = "                                        "; // 40 spaces
+  spaceLength = Math.max(0, spaceLength);
+  spaceLength = Math.min(40, spaceLength);
+  return spaces.substr(0, spaceLength);
+};
+
+console.log(`spaces(10): "${spaces(10)}"`);
+console.log(`spaces(20): "${spaces(20)}"`);
+
+
+
+var emptyBox = function(width) {
+  width = Math.max(2, width); 
+  width = Math.min(40, width); 
+  var topBottom = line(width);
+  var middle = "=" + spaces(width - 2) + "=";
+  console.log(topBottom);
+  for (var i = 0; i < 3; i++) {
+      console.log(middle);
+  }
+  console.log(topBottom);
+};
+
+emptyBox(12);
+emptyBox(5);
+
+
   /* Further Adventures
    *
    * 1) Test line lengths from -20 to 60
