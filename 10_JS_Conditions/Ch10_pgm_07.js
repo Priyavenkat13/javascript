@@ -8,17 +8,30 @@ var getQuiz = function () {
         next,
         getQuestion,
         checkAnswer,
-        submit;
-      
+        submit,
+        getHint;
+
     questions = [
       {
         question: "What is the highest mountain in the world?",
-        answer: "Everest"
+        answer: "Everest",
+        hint: "It is located in the Himalayas."
       },
       {
         question: "What is the highest mountain in Scotland?",
-        answer: "Ben Nevis"
-      }
+        answer: "Ben Nevis",
+        hint: "It is located near the town of Fort William."
+      },
+      {
+        question: "What is the longest river in the world?",
+        answer: "Nile",
+        hint: "It flows through northeastern Africa."
+      },
+      {
+        question: "What is the largest desert in the world?",
+        answer: "Sahara",
+        hint: "It is located in Africa."
+      },
     ];
     
     next = function () {
@@ -58,17 +71,30 @@ var getQuiz = function () {
         
       return message;
     };
-    
+    getHint = function () {
+      if (inPlay) {
+        return questions[qIndex].hint;
+      } else {
+        return "You have finished the quiz.";
+      }
+    };
     return {
       quizMe: getQuestion,
-      submit: submit
+      submit: submit,
+      helpMe: getHint
     };
   };
   
   var quiz = getQuiz();
-  
-  
-  
+  console.log(quiz.quizMe()); 
+  console.log(quiz.helpMe()); 
+  console.log(quiz.submit("Everest"));
+  console.log(quiz.quizMe()); 
+  console.log(quiz.helpMe()); 
+  console.log(quiz.submit("Sahara"));
+
+
+
   /* Further Adventures
    *
    * 1) Run the program.
